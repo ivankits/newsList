@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { LoadNewsService } from './load-news.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'newsList';
+  constructor(public newsService: LoadNewsService)
+  {
+
+  }
+  onScroll()
+  {
+    console.log ('onscroll');
+    this.newsService.getNews();
+  }
 }

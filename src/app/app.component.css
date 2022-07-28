@@ -1,0 +1,17 @@
+.container
+{
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    align-items: center;
+    width: 100w;
+    overflow-y: auto;
+    padding-top: 5%;
+}
+
+img
+{
+    height: 20vh;
+}
