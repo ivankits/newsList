@@ -4,9 +4,7 @@
     overflow-wrap: break-word;
 }
 :host
-{
-
-    margin-bottom: 20px;
+{ margin-bottom: 20px;
     cursor: pointer;
     box-sizing: border-box;
     display: flex;
