@@ -2,7 +2,7 @@
 <div *ngIf="loaded" [@loaded] class="container">
 <button (click)="back()" mat-fab><mat-icon>arrow_back    </mat-icon></button>
 <h1>{{article.title}}</h1>
-<span>{{article.publishedDate|date:'dd/mm/yyyy'}}</span>
+<span>{{article.publishedDate|date:'dd/LL/yyyy'}}</span>
 <div  [innerHtml]="this.article.text|sanitizer"></div>
 
 </div>

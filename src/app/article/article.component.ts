@@ -26,8 +26,15 @@ export class ArticleComponent implements OnInit {
   url: string="";
   article!: Article;
   constructor(public router: Router,public loadArticle: LoadArticleService) {
+    
+    try{
     this.url=(this.router.getCurrentNavigation()!.extras.state!["url"])||'';
-
+    }
+    catch
+    {
+      router.navigate(['/'])
+    }
+    
    }
 
   back()
