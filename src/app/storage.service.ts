@@ -26,7 +26,6 @@ export class StorageService {
    addNews(n: News)
    {
       this.news.unshift(n);
-      this.loadNews.newsArr.news.unshift(n);
       this.setNews();
    }
 }
