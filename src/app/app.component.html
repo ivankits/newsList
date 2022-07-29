@@ -1,10 +1,4 @@
-<div 
-infiniteScroll
-      [infiniteScrollDistance]="0 "
-      [infiniteScrollThrottle]="0"
-      (scrolled)="onScroll()"
-class='container'>
-  <app-list-item *ngFor="let news of newsService.newsArr.news"
-  [news]="news"
-  ></app-list-item>
- </div>  
+
+<div class="container">
+ <router-outlet></router-outlet>     
+</div>

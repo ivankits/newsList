@@ -1,6 +1,9 @@
-<img [src]="news.titleImageUrl">
+
+  <div class='img' [style.backgroundImage]='"url("+this.news.titleImageUrl+")"'></div>
 <div class="info">
     <span class="title">{{news.title}}</span>
-    <span>{{news.description}}</span>
-    <span>{{news.publishedDate|date:"d/L/yyyy"}}</span>
-</div>
+    <span class="desc">{{news.description}}</span>
+    <span >{{news.publishedDate|date:"d/L/yyyy"}}</span>
+</div>  
+<button (click)="remove()" *ngIf="!this.news.url" mat-fab><mat-icon>delete</mat-icon></button>
+

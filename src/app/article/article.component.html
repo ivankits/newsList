@@ -1,0 +1,6 @@
+
+<ng-container *ngIf="loaded">
+<h1>{{article.title}}</h1>
+<span>{{article.publishedDate|date:'dd/ll/yyyy'}}</span>
+<div  [innerHtml]="this.article.text|sanitizer"></div>
+</ng-container>

@@ -1,0 +1,14 @@
+:host
+{
+
+    display: flex;
+    flex-flow: column;
+    width: 90%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+:host>*
+{
+    margin: 2%;
+}

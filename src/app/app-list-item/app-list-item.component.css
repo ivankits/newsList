@@ -14,7 +14,15 @@
     align-items: center;
     justify-content: flex-start;
 }
-
+.desc
+{
+    overflow-x: auto;
+}
+button
+{
+    margin: 5%;
+    object-fit: scale-down;
+}
 
 :host:hover{
     background-color: #fefefe;
@@ -24,8 +32,8 @@
 
 .info
 {
-    width: 70%;
-    height: fit-content;
+    width: 80%;
+    height: 80%;
     min-height: fit-content;
     font-size: 0.8rem;
     display: flex;
@@ -36,7 +44,8 @@
 
 .info *
 {
-    margin-bottom: 5px
+    margin-bottom: 5px;
+    
 }
 
 .title
@@ -45,13 +54,25 @@
     font-size: 1rem;
 }
 
-img
+.img
 {
-    max-width: 30%;
-    object-fit: scale-down;
-   height: 80%;
-    padding: 1%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 20px;
     border-radius: 5px;
+    -moz-background-clip: padding;
+    -webkit-background-clip: padding-box;
+    background-clip: border-box;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    margin: 1%;
+    border-radius: 5px;
+    background-image: url("/assets/photo.svg") center no;
 }
 
 

@@ -1,0 +1,14 @@
+<div class="container">
+<mat-form-field  class="input" appearance="fill">
+    <mat-label>Название новости</mat-label>
+    <textarea required="" matInput [(ngModel)]="this.news.title" placeholder="Введите название новости"></textarea>
+  </mat-form-field>
+    <mat-form-field  class="input" appearance="fill">
+        <mat-label>Описание новости</mat-label>
+        <textarea required [(ngModel)]="this.news.description" matInput placeholder="Опишите новость"></textarea>
+      </mat-form-field>
+        <button (click)="addImage()" matTooltip="Добавить фото" mat-raised-button color="accent"><img src="/assets/photo.svg"/></button>
+        <img style="width: 40%;" (error)="imgError($event)"  [src]="this.news.titleImageUrl||'/assets/nophoto.svg'" class="image"/>
+    <button mat-button color="warn">Отмена</button>
+    <button  (click)="addNews()" mat-raised-button color="accent">Сохранить</button>
+</div>

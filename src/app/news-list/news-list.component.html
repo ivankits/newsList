@@ -1,0 +1,19 @@
+
+<div 
+infiniteScroll
+[infiniteScrollDistance]="1"
+[infiniteScrollThrottle]="500"
+(scrolled)="onScroll()"
+class='container'>
+<div class="btnContainer">
+<button (click)="addNews()" matTooltip="Добавить новость" mat-fab><mat-icon>add</mat-icon></button>
+</div>
+<app-list-item *ngFor="let news of storage.news"
+[news]="news"
+></app-list-item>
+<app-list-item *ngFor="let news of newsService.newsArr.news"
+[news]="news"
+></app-list-item>
+<mat-spinner></mat-spinner>
+</div>
+
