@@ -27,8 +27,8 @@ export class NewsListComponent implements OnInit {
     addNews()
     {
       this.dialog.open(AddNewsComponent, {
-        width: 'fit-content',
-        height: '80%'
+        height: '80%',
+        width: '80vmin'
       })
     }
     
