@@ -1,6 +1,5 @@
-:host
+.container
 {
-
     display: flex;
     flex-flow: column;
     width: 90%;
@@ -11,4 +10,9 @@
 :host>*
 {
     margin: 2%;
+}
+
+button
+{
+    margin-bottom: 30px;
 }

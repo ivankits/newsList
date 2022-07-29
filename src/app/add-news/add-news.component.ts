@@ -28,6 +28,10 @@ export class AddNewsComponent implements OnInit {
     this.news.publishedDate=Date.now().toString();
   }
 
+  cancel()
+  {
+    this.dialog.close();
+  }
 
   
   addNews()
@@ -42,7 +46,6 @@ export class AddNewsComponent implements OnInit {
       if (this.news.title&&this.news.description&&this.news.titleImageUrl&&this.news.publishedDate)
     {
       this.storage.addNews(this.news);
-      console.log(localStorage.getItem('news'));
     }
     this.dialog.close();
     }

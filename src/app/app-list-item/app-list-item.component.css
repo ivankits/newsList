@@ -1,12 +1,18 @@
+*
+{
+    box-sizing: border-box;
+    overflow-wrap: break-word;
+}
 :host
 {
+
     margin-bottom: 20px;
     cursor: pointer;
     box-sizing: border-box;
     display: flex;
     flex-flow: row nowrap;
-    width: 90%;
-    height: 20vh;
+    width: 80%;
+    height: fit-content;
     min-height: fit-content;
     background-color: #f3f3f3;
     border-radius: 5px;
@@ -15,12 +21,18 @@
     justify-content: flex-start;
 }
 .desc
+
 {
-    overflow-x: auto;
+    flex-flow: 1;
+    overflow-wrap: break-word;
+    width: 90%;
+    min-height: fit-content;
 }
 button
 {
     margin: 5%;
+    width: 50px;
+    height: 50px;
     object-fit: scale-down;
 }
 
@@ -33,7 +45,7 @@ button
 .info
 {
     width: 80%;
-    height: 80%;
+    height: fit-content;
     min-height: fit-content;
     font-size: 0.8rem;
     display: flex;
@@ -44,6 +56,7 @@ button
 
 .info *
 {
+    min-height: fit-content;
     margin-bottom: 5px;
     
 }
@@ -56,10 +69,10 @@ button
 
 .img
 {
+    flex-grow: 0;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    margin-right: 20px;
     border-radius: 5px;
     -moz-background-clip: padding;
     -webkit-background-clip: padding-box;
@@ -70,7 +83,7 @@ button
     flex-shrink: 0;
     width: 100px;
     height: 100px;
-    margin: 1%;
+    margin: 0px 4px 0px 4px;
     border-radius: 5px;
     background-image: url("/assets/photo.svg") center no;
 }
@@ -82,7 +95,7 @@ button
       height: 0px;
       width: 0px;
     }
-    .info{
-        width: 100%;
+    .host{
+        height: fit-content;
     }
   }
