@@ -1,4 +1,4 @@
-
+<div  [@fade] class="container">
   <div class='img' [style.backgroundImage]='"url("+this.news.titleImageUrl+")"'></div>
 <div class="info">
     <span class="title">{{news.title}}</span>
@@ -7,3 +7,5 @@
 </div>  
 <button (click)="remove()" *ngIf="!this.news.url" mat-fab><mat-icon>delete</mat-icon></button>
 
+</div>
+    
